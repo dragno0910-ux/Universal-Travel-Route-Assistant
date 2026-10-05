@@ -1,0 +1,15 @@
+ {
+  "name": "universal-travel-route-assistant",
+  "version": "1.0.0",
+  "description": "Universal Travel & Route Assistant — Personal travel guide for unfamiliar cities starting with Mumbai",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd server && npm run build && cd ../client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
